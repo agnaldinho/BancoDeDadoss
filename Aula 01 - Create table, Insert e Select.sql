@@ -2,6 +2,7 @@
 
 -- criar tabela no banco de dados
 CREATE table Pessoa (
+    idPessoa int,
     nomePessoa varchar(250),
     idade int 
 );
