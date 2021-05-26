@@ -1,0 +1,20 @@
+select * from cds;
+SELECT nome, DataCompra FROM cds ORDER BY nome;
+SELECT nome, DataCompra FROM cds ORDER BY DataCompra desc;
+SELECT sum(valorpago) FROM cds;
+select * from musica where idcds like 4;
+select  m.nome, c.nome from cds as c inner join musica as m on m.numero = c.idcds;
+select nome, artista from musica;
+select numero, tempo from musica where idcds = 4 order by numero;
+SELECT count(nome) FROM musica;
+SELECT count(nome) FROM cds;
+select nome, artista from musica where artista like "Louro josé";
+SELECT count(nome) FROM musica where Artista like "Louro josé";
+select nome from musica order by nome;
+Select Max(valorpago) From cds;
+select min(ValorPago) from cds;
+select * from cds where DataCompra < "2014-01-01";
+select * from cds where DataCompra > "2014-01-01";
+select * from musica where Tempo >= 120;
+/*Não consigui fazer essa*/
+select nome, artista, max(tempo) from musica where artista like "Louro josé";
